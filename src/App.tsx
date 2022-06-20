@@ -1,5 +1,6 @@
 import Spline, { SplineEvent } from "@splinetool/react-spline";
 import React, { useEffect } from "react";
+import "./App.css";
 
 export default function App() {
   const [equation, setEquation] = React.useState("");
@@ -61,6 +62,11 @@ export default function App() {
       <Spline
         scene="https://prod.spline.design/udsQsQSaD-BQCTLH/scene.splinecode"
         onMouseDown={onMouseDown}
+        style={{
+          width: "100vw",
+          height: "100vh",
+        }}
+        id="spline"
       />
     </>
   );
